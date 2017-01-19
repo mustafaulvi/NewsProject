@@ -11,7 +11,7 @@
 			ng-disabled="tab.disabled"
 			label="{{$index}}">
 			<div class="demo-tab tab{{$index%4}}" style="padding: 25px; text-align: center;">
-				<img src="{{tab.urlToImage.split('?')[0]}}" alt="Mountain View" style="width:100%;height:100%;">
+				<a href="{{tab.url}}"><img src="{{tab.urlToImage.split('?')[0]}}" alt="Mountain View" style="width:100%;height:100%;"></a>
 				<br/>
 				<div ng-bind="tab.description"></div>
 			</div>
